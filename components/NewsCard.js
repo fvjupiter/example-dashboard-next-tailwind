@@ -7,7 +7,7 @@ export default function NewsCard({ index, id, title, synopsis, image, isDark }) 
 //   const getHeight = (height, width, prefferedWidth) =>  height / width * prefferedWidth
   const imgConRef = useRef(null)
   const isOdd = false // index % 2 == 1
-
+  
   return (
     <>
         <Link key={index} href={`/news/${id}`}>

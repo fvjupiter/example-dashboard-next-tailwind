@@ -7,6 +7,8 @@ const nextConfig = {
     // path: '',
     domains: [
       'heise.cloudimg.io',
+      'i.ibb.co',
+      'images.unsplash.com',
     ]
   }
 }
