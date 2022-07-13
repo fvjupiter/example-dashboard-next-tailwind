@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // assetPrefix: './',
+  // exportTrailingSlash: true,
+  // assetPrefix: './', // for next export
   images: {
-    // loader: "akamai",
-    // path: '',
+    // loader: "akamai", //for next export 
+    // path: '', //for next export
     domains: [
       'heise.cloudimg.io',
       'i.ibb.co',
