@@ -1,0 +1,1 @@
+{"c":["pages/aufgabe3/[slug]","webpack"],"r":["pages/news/[slug]"],"m":["./components/NewsContent.js","./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?absolutePagePath=%2FUsers%2Ffredy%2Fcode%2FProjects%2FHeiseBewerbungsAufgaben%2Fheisebewerbung%2Fpages%2Fnews%2F%5Bslug%5D.js&page=%2Fnews%2F%5Bslug%5D!","./pages/news/[slug].js"]}
