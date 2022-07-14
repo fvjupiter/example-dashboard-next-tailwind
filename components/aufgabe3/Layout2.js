@@ -30,7 +30,7 @@ export default function Layout2() {
       <div className={`${cN} ${colored.pink} flex-none md:w-52 overflow-scroll`}>Navigation</div>
       <div ref={conRef} className={`${cN} ${colored.stone} md:w-full whitespace-pre-line`}>
           <h1 className='lg:text-2xl lg:font-bold pb-2'>Warum welcher Layout-Mode</h1>
-          <p className='font-light'>{`Unter einer Viewport-Breite von 768px wird die Seite im Layout-Mode 'Normal Flow' (beinhaltet Block-Layout) angezeigt:
+          <p className='font-light text-base'>{`Unter einer Viewport-Breite von 768px wird die Seite im Layout-Mode 'Normal Flow' (beinhaltet Block-Layout) angezeigt:
           So fließen alle Container untereinander und haben automatisch eine Breite von 100% und damit genug Platz um ihre Inhalte angemessen zu platzieren.
 
           Ab einer Viewport-Breite von 768px wird die Seite im Layout-Mode 'Flexible Box Layout' angezeigt:
