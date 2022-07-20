@@ -31,7 +31,7 @@ export default function NewsCard({ index, id, title, synopsis, image, isDark }) 
                             objectPosition='center'
                             className={`text-stone-400 dark:bg-stone-800 bg-white`}
                         />
-                        : <div className='text-stone-400 text-center pt-5 italic'>
+                        : <div className='text-stone-400 text-center italic'>
                             image not found
                         </div>
                     }

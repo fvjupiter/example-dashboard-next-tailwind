@@ -18,7 +18,7 @@ export default function Layout3({ isDark }) {
             alt='aiicecream'
             src={'/aiicecream.jpg'}
             // src={'https://images.unsplash.com/photo-1635438004811-54b5864e57eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&w=1000&q=80'}
-            // src={'https://i.ibb.co/LvWdwWB/aiicecream.jpg'}
+            // src={'https://i.ibb.co/LvWdwWB/aiicecream.jpg'} // npm export & build
             height={800}
             width={800}
             placeholder='blur'
