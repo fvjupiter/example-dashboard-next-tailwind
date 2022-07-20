@@ -21,15 +21,20 @@ export default function NewsCard({ index, id, title, synopsis, image, isDark }) 
                 duration cursor-pointer overflow-hidden
             `}>
                 <div ref={imgConRef} className={`${isOdd && 'right-0'} absolute z-10 w-full md:w-80 lg:w-72 h-80 md:h-full center`}>
-                    <Image 
-                        priority={index == 0 ? true : false}
-                        alt={`${image.alt ? image.alt : `thumbnail of '${title}'`}`}
-                        src={`${image.src}`}
-                        layout='fill'
-                        objectFit='cover'
-                        objectPosition='center'
-                        className={`text-stone-400 dark:bg-stone-800 bg-white`}
-                    />
+                    {image.width && image.height ?
+                        <Image 
+                            priority={index == 0 ? true : false}
+                            alt={`${image.alt ? image.alt : `thumbnail of '${title}'`}`}
+                            src={`${image.src}`}
+                            layout='fill'
+                            objectFit='cover'
+                            objectPosition='center'
+                            className={`text-stone-400 dark:bg-stone-800 bg-white`}
+                        />
+                        : <div className='text-stone-400 text-center pt-5 italic'>
+                            image not found
+                        </div>
+                    }
                 </div>
                 <div className={`${isOdd ? 'mr-72' : 'md:ml-80 lg:ml-72'} pt-[336px] pb-4 md:pb-0 md:pt-4`}>
                     <div className='px-4 md:px-8'>

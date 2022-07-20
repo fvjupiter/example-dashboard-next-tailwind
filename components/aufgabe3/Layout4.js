@@ -29,7 +29,7 @@ export default function Layout4({ isDark }) {
                 `Funktionen zur Berechnung von CSS-Werten können zugunsten der Wiederverwendung erstellt werden`,
                 `Nachteile:
                 1. Benötigt eigene .sass oder .scss Datei, Klassen etc. werden also nicht lokal definiert
-                2. Ist nicht Tailwind (Tailwind-Vorteile)`
+                2. Hat nicht die Tailwind-Vorteile`
             ]
         }
     ]
