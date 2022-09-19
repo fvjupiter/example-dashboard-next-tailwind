@@ -33,7 +33,7 @@ export default function EndlessNews({ isDark }) {
         const options = {
             method: 'GET',
             headers: {
-                'X-Heise-Token': 'zcJulkgE',
+                'X-Heise-Token': process.env.NEXT_PUBLIC_TOKEN,
                 'Content-Type': 'application/json'
             }
         }
