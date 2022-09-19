@@ -3,26 +3,47 @@ import Link from 'next/link'
 export default function ExercisePrompt({ isPrompt, setisPrompt }) {
   const exercises = [
     {
-      name: '1 + 2: Dashboard (News, Wetter)',
+      name: 'Dashboard (News, Wetter)',
       href: '/'
     },
     {
-      name: '3.1: Layout 1',
-      href: '/aufgabe3/layout1',
+      name: 'Layout 1',
+      href: '/layouts/layout1',
     },
     {
-      name: '3.2: Layout 2',
-      href: '/aufgabe3/layout2',
+      name: 'Layout 2',
+      href: '/layouts/layout2',
     },
     {
-      name: '3.3: Layout 3',
-      href: '/aufgabe3/layout3',
+      name: 'Layout 3',
+      href: '/layouts/layout3',
     },
     {
-      name: '3.4 + 3.5: CSS Styling und Box-Modell',
-      href: '/aufgabe3/layout4',
+      name: 'CSS Styling und Box-Modell',
+      href: '/layouts/layout4',
     }
+    // {
+    //   name: '1 + 2: Dashboard (News, Wetter)',
+    //   href: '/'
+    // },
+    // {
+    //   name: '3.1: Layout 1',
+    //   href: '/aufgabe3/layout1',
+    // },
+    // {
+    //   name: '3.2: Layout 2',
+    //   href: '/aufgabe3/layout2',
+    // },
+    // {
+    //   name: '3.3: Layout 3',
+    //   href: '/aufgabe3/layout3',
+    // },
+    // {
+    //   name: '3.4 + 3.5: CSS Styling und Box-Modell',
+    //   href: '/aufgabe3/layout4',
+    // }
   ]
+  
   return <>
     <div onClick={() => setisPrompt(true)}
       className={`
@@ -42,7 +63,8 @@ export default function ExercisePrompt({ isPrompt, setisPrompt }) {
           max-h-screen overflow-y-scroll
         `}>
             <h2 className='text-base sm:text-lg font-bold mb-3 sm:mb-4 between'>
-              <span className='px-4'>Bewerbungsaufgaben</span>
+              <span className='px-4'>Beispiele</span>
+              {/* Bewerbungsaufgaben */}
               <span onClick={() => setisPrompt(false)} className='cursor-pointer text-stone-400 dark:hover:text-white hover:text-indigo-900'>x</span>
             </h2>
             {exercises.map((exercise, index) => (
