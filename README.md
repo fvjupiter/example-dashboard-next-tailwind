@@ -1,18 +1,29 @@
-## Heise Bewerbungsaufgaben
-Hier finden sie die Lösung der Bewerbungsaufgaben
+# Example Dashboard / Layouts
 
-1. Öffnen sie eine directory im terminal (bzw Editor) und fügen Sie folgenden command ein:
+### 1. Clone the repository
 
-git clone https://github.com/fvjupiter/heise-bewerbungsaufgaben-next-tailwind.git
+```
+git clone https://github.com/fvjupiter/example-dashboard-next-tailwind.git
+```
 
-2. Wechseln Sie in den geklonten Ordner:
+### 2. Go to the directory
 
-cd heise-bewerbungsaufgaben-next-tailwind
+```
+cd example-dashboard-next-tailwind
+```
 
-3. Starten Sie den Development Server (node_modules sind bereits enthalten)
+### 3. Install dependencies
 
+```
+npm install
+```
+
+### 4. Run the development server
+
+```
 npm run dev
+```
 
-## oder besuchen Sie folgenden Link für eine Demo:
+## Or visist the live demo at:
 
-https://heise-bewerbungsaufgaben.vercel.app
+https://dashboard-beispiel.vercel.app
