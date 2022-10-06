@@ -54,8 +54,12 @@ export default function ExercisePrompt({ isPrompt, setisPrompt }) {
     `}
       >💡
     </div>
-    <div className={`${isPrompt ? 'visible' : 'hidden'} fixed inset-0 z-50 backdrop center bg-black/60`}>
-        <div className={`
+    <div onClick={() => setisPrompt(false)} 
+      className={`
+        ${isPrompt ? 'visible' : 'hidden'} 
+        fixed inset-0 z-50 backdrop center bg-black/60
+      `}>
+        <div onClick={(e) => { e.stopPropagation() }} className={`
           w-11/12 max-w-2xl px-4 py-3 sm:px-8 sm:py-4 lg:-translate-y-10
           dark:bg-stone-800 bg-white dark:text-white text-indigo-900
           rounded-3xl shadow-2xl shadow-black border-2 dark:border-indigo-700 border-indigo-900
